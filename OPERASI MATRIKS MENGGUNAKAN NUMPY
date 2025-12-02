@@ -1,0 +1,36 @@
+#3.1 Membuat Matriks Baru
+print("membuat matriks baru")
+import numpy as np
+M1 = np.array([[1, 2], [3, 4]])
+M2 = np.array([[5, 6], [7, 8]])
+
+#3.2 Penjumlahan matriks
+print("hasil penjumlahan matriks")
+M_tambah = M1 + M2
+print(M_tambah)
+
+#3.3 Pengurangan matriks
+print("hasil pengurangan matriks")
+M_kurang = M1 - M2
+print(M_kurang)
+
+#3.4 Perkalian matriks (dot product)
+print("hasil perkalian matriks")
+M_kali = np.dot(M1, M2)
+print(M_kali)
+#atau
+print("hasil perkalian matriks")
+M_kali = M1 @ M2
+print(M_kali)
+
+#3.5 Transpose matriks
+print("hasil transpose matriks")
+M_taranspose = M1.T
+print(M_taranspose)
+
+#3.6 Mengakses elemen matriks 
+print(M1[0][1])# baris 1 kolom 2
+
+#3.7 Membuat matriks nol / identitas
+Z = np.zeros((3,3))
+I = np.eye(3)
